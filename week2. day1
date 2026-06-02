@@ -1,0 +1,1456 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "c57dcf25-2828-4df0-8462-4b7a1b819772",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# list"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "id": "c890002c-7cae-4757-a5fa-d90e59e3523b",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "l1 = [23,24,25,15,21,]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 11,
+   "id": "72d6a87a-e18b-4d94-84cd-b705ed3b1955",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[23, 24, 25, 15, 21]\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(l1)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "id": "a12cd24a-b45a-4437-968e-69d4baf72a5a",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "l2 = [12,34,56,12,\"tanu\",54]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "ed3eb20d-6db9-4046-a0c8-9caa21a7a0b2",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[12, 34, 56, 12, 'tanu', 54]\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(l2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "id": "ac972543-76da-4078-8556-17fc5a3f58b9",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# lists are ordered"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "id": "0f299bdd-ebab-4e32-a064-a0659de2f610",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[12, 34, 56, 12, 'tanu', 54]"
+      ]
+     },
+     "execution_count": 13,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l2"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "id": "f09b7487-678e-440f-8256-2cc857fff56a",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "56"
+      ]
+     },
+     "execution_count": 18,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l2[2]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "id": "1696caef-b99e-480d-b97f-008d63c619f2",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# list slicing"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "id": "8a3f087e-43d2-43bc-849e-708e0542f919",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "l = [21, 23,45,67,89,11]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "id": "4a9a8a80-a486-427d-8a00-c4d3388ea4d9",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[21, 23, 45, 67, 89, 11]"
+      ]
+     },
+     "execution_count": 17,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "id": "de4335cb-6d17-4678-90f7-9d252a668e06",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[23, 45, 67]"
+      ]
+     },
+     "execution_count": 19,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l[1:4]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 20,
+   "id": "8353385b-c91d-4828-8f61-e244a973e6c6",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[23, 45, 67]"
+      ]
+     },
+     "execution_count": 20,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l[1:-2]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 24,
+   "id": "3a193b16-8e81-495f-8dc9-a1ce57729b0e",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# 21,45,89"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 25,
+   "id": "18c55aa7-84c0-441a-94b6-4131b9ccf6e3",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[21, 45, 89]"
+      ]
+     },
+     "execution_count": 25,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l[::2]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 26,
+   "id": "e0b47615-3057-4c87-a076-73a5730a5ea3",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[21, 45, 89]"
+      ]
+     },
+     "execution_count": 26,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l[0:6:2]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 27,
+   "id": "5ab75d19-c23c-433d-8e8c-747193a3af62",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# reverse the list"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 28,
+   "id": "454656e1-7289-4b37-8c8c-fa1fa3503288",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[21, 23, 45, 67, 89, 11]"
+      ]
+     },
+     "execution_count": 28,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 29,
+   "id": "357f9542-e5b3-4c4c-b80d-67da2236d37a",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[21, 23, 45, 67, 89, 11]"
+      ]
+     },
+     "execution_count": 29,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l[::1]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 31,
+   "id": "d6d90315-8392-46e0-a81f-ca39c770286c",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[11, 89, 67, 45, 23, 21]"
+      ]
+     },
+     "execution_count": 31,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l[::-1]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 34,
+   "id": "3ddc8f35-1ba9-4d83-a1ee-bcf23cb5b706",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "l[1:4] = [100, 200, 300]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 35,
+   "id": "8cdae160-43ff-4e59-ba4a-ee2ad32eead7",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[21, 100, 200, 300, 89, 11]"
+      ]
+     },
+     "execution_count": 35,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 36,
+   "id": "0016a272-c821-4cf7-8f3a-2253164db6b4",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "l1 = [12,34,56,23]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 38,
+   "id": "959a4118-6092-4379-8284-d9908950bd3e",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "del l1[-2]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 39,
+   "id": "5be92469-edba-4f43-988f-720889461306",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[12, 34, 23]"
+      ]
+     },
+     "execution_count": 39,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 40,
+   "id": "c0d764c9-026a-417f-a6c7-182e6a17f812",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "del l1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 41,
+   "id": "e0429bbd-0241-42e2-bf8f-43780a7a96a0",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "NameError",
+     "evalue": "name 'l1' is not defined",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[31m-------------------------------------------------------------\u001b[39m",
+      "\u001b[31mNameError\u001b[39m                   Traceback (most recent call last)",
+      "\u001b[36mCell\u001b[39m\u001b[36m \u001b[39m\u001b[32mIn[41]\u001b[39m\u001b[32m, line 1\u001b[39m\n\u001b[32m----> \u001b[39m\u001b[32m1\u001b[39m \u001b[43ml1\u001b[49m\n",
+      "\u001b[31mNameError\u001b[39m: name 'l1' is not defined"
+     ]
+    }
+   ],
+   "source": [
+    "l1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 42,
+   "id": "32acc8b7-7140-447f-a42d-13e669e18df8",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# membership operator"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 43,
+   "id": "26716cd6-9ff6-4af2-86a2-8865942cb5c4",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[21, 100, 200, 300, 89, 11]"
+      ]
+     },
+     "execution_count": 43,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 45,
+   "id": "ea9ec6be-e29e-429a-8f79-eea2124b846e",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "True"
+      ]
+     },
+     "execution_count": 45,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "89 in l"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 46,
+   "id": "646545e1-719a-4e25-bf70-274c902edf50",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "False"
+      ]
+     },
+     "execution_count": 46,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "1038 in l"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 47,
+   "id": "10f4d838-3c84-40b5-bf84-12ff027e281e",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# arithmetic operators"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 48,
+   "id": "9a06afb9-4dc5-48bc-80cb-0310b7782e1d",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[21, 100, 200, 300, 89, 11]"
+      ]
+     },
+     "execution_count": 48,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 53,
+   "id": "1d20ee76-204e-4ff0-8a38-f950a7f70ee7",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'okokok'"
+      ]
+     },
+     "execution_count": 53,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    " 'ok' * 3"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 55,
+   "id": "532c8439-5a2c-4c40-83f3-8120328a6b4b",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[21, 100, 200, 300, 89, 11, 21, 100, 200, 300, 89, 11]"
+      ]
+     },
+     "execution_count": 55,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l * 2"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 56,
+   "id": "d4721f2f-1ebf-49e2-a278-4c42db62bb69",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[21, 100, 200, 300, 89, 11, 60, 70, 80]"
+      ]
+     },
+     "execution_count": 56,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l + [60, 70, 80]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 57,
+   "id": "b005c648-a2df-4167-9f31-1b04376cfdbe",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#take 2 diffrent list and add them"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 58,
+   "id": "10b2af57-8dc7-49a7-96f9-1660ad648820",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "l3 = [34, 45 ,67, 88]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 59,
+   "id": "73d50a7b-40a3-4c58-8f4c-03621a71c98c",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[34, 45, 67, 88]"
+      ]
+     },
+     "execution_count": 59,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l3"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 60,
+   "id": "0583ad75-e136-4254-a75a-720507ee07d4",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "l4 = [3, 5, 6, 8]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 61,
+   "id": "1ae12cf8-a175-4b46-884b-eac1e508bc67",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[3, 5, 6, 8]"
+      ]
+     },
+     "execution_count": 61,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l4"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 62,
+   "id": "645c23c0-0ed2-4b42-9b69-5fc66719ed2f",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[34, 45, 67, 88, 3, 5, 6, 8]"
+      ]
+     },
+     "execution_count": 62,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l3 + l4"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 63,
+   "id": "3535d35b-2623-4d52-89ce-fdbe3772ba14",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[34, 45, 67, 88, 3, 5, 6, 8]"
+      ]
+     },
+     "execution_count": 63,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l3 + [3, 5, 6, 8]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 64,
+   "id": "b7f930e2-77b4-46e5-94b8-e606a6eec5d4",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# iteration over list"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 65,
+   "id": "4e49de1f-306a-42af-8bba-a88e069ecb7a",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[21, 100, 200, 300, 89, 11]"
+      ]
+     },
+     "execution_count": 65,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 66,
+   "id": "5068a50a-998b-4c9b-a867-9d55dbe695d4",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# iterate over list and print square of each element"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 67,
+   "id": "587956f5-c2a1-4c93-8a37-08b47012deab",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "441\n",
+      "10000\n",
+      "40000\n",
+      "90000\n",
+      "7921\n",
+      "121\n"
+     ]
+    }
+   ],
+   "source": [
+    "for i in l:\n",
+    "    print(i**2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 68,
+   "id": "d49b29d0-597d-4a8a-b546-703e0e4532fa",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#print odd numbers in the list"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 73,
+   "id": "b6ec6273-f400-4153-b96d-87e9c773f848",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[21, 100, 200, 300, 89, 11]"
+      ]
+     },
+     "execution_count": 73,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 76,
+   "id": "585fc674-4a52-4f3f-a837-4c799db83bde",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "21\n",
+      "89\n",
+      "11\n"
+     ]
+    }
+   ],
+   "source": [
+    "for i in l:\n",
+    "    if i % 2 == 1:\n",
+    "        print(i)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 78,
+   "id": "3180590e-eb0d-47e3-b576-8eefe3b1e029",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# list comprehension=[expression for_loop if_condition]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 82,
+   "id": "952b9861-7f58-4e54-8997-330513ec38a2",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "newl = [l**2 for l in l] "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 83,
+   "id": "4e4cb089-e051-4e78-913a-1e307574d98b",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[441, 10000, 40000, 90000, 7921, 121]"
+      ]
+     },
+     "execution_count": 83,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "newl"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 86,
+   "id": "c12ef9ab-1f57-4650-a548-0498e6b45fe5",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "newl2 = [i for i in l if i % 2 == 1]\n",
+    "    "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 88,
+   "id": "a452f9a5-21f9-4bdd-ab95-acee0493176c",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[21, 89, 11]"
+      ]
+     },
+     "execution_count": 88,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "newl2"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 101,
+   "id": "37552a54-d433-4045-9dd3-2993955793e2",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "names = ['Aryan', 'atharv', 'samruddhi','sukanya','shivraj']"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 90,
+   "id": "1460655d-998d-4e74-be00-663c7ec5aa70",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "['Aryan', 'atharv', 'samruddhi', 'sukanya', 'shivraj']"
+      ]
+     },
+     "execution_count": 90,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "names"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 91,
+   "id": "fa0f2c02-54e9-4b92-8910-76f065dd53d8",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# create a new list with names which starts with 's' or 'S'"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 99,
+   "id": "1d57d653-548c-4b0e-9a6c-09be719cdaf8",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "samruddhi\n",
+      "sukanya\n",
+      "shivraj\n"
+     ]
+    }
+   ],
+   "source": [
+    "for i in names:\n",
+    "    if i.lower().startswith('s'):\n",
+    "        print(i)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 102,
+   "id": "4bac86fd-a4c4-466e-987f-fa1a32e17521",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "new = [i for i in names if i.lower().startswith('s')]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 103,
+   "id": "58c4bd60-1ab4-4a0e-b9da-913cec873824",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[21, 100, 200, 300, 89, 11]"
+      ]
+     },
+     "execution_count": 103,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 104,
+   "id": "f8f13e45-2a5c-4791-9c38-821e20b7d008",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "6"
+      ]
+     },
+     "execution_count": 104,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "len(l)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 105,
+   "id": "0cd92772-312f-4383-8900-5701f20e5a44",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "300"
+      ]
+     },
+     "execution_count": 105,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "max(l)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 106,
+   "id": "00da960d-7013-4cc5-88a2-2f6eac778a64",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "11"
+      ]
+     },
+     "execution_count": 106,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "min(l)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 107,
+   "id": "2104b1a3-41d9-4878-999a-8bc37a02c77c",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[11, 21, 89, 100, 200, 300]"
+      ]
+     },
+     "execution_count": 107,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "sorted(l)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 108,
+   "id": "d3248018-ca35-41ad-9949-d6dad5e1d25d",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[300, 200, 100, 89, 21, 11]"
+      ]
+     },
+     "execution_count": 108,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "sorted(l, reverse = True)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 109,
+   "id": "879f9072-ee51-4e0f-b68f-0a47ee0c4e42",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "l.append(1000)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 110,
+   "id": "67850926-6309-4bfe-aac7-38463dfb0a35",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[21, 100, 200, 300, 89, 11, 1000]"
+      ]
+     },
+     "execution_count": 110,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 113,
+   "id": "24447719-9cf2-4288-b058-1ab6d04aa2b0",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "l1 = [1, 2, 3]\n",
+    "l2 = [1, 2, 3]"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "71a189b7-39c4-4ddf-8cf6-df49796bbacb",
+   "metadata": {},
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 117,
+   "id": "117cc172-07be-4a52-b900-c123211f81a7",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "l1.append([100, 200])\n",
+    "l2.extend([100, 200])"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 118,
+   "id": "6b31ac78-17cc-4f62-a3a3-b3465825abc3",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[1, 2, 3, [100, 200]]"
+      ]
+     },
+     "execution_count": 118,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 119,
+   "id": "1e4ebef7-a51e-4904-8f04-d6413ce5b35b",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[1, 2, 3, 100, 200]"
+      ]
+     },
+     "execution_count": 119,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l2"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 120,
+   "id": "bf72c0f1-6091-47e5-94bf-d334a657dd12",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[100, 200]"
+      ]
+     },
+     "execution_count": 120,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l1[3]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 121,
+   "id": "8bdcf99d-b734-4d68-a439-b572990bac01",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "200"
+      ]
+     },
+     "execution_count": 121,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l1[3][1]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 122,
+   "id": "18b417ee-2ef0-4622-b422-1f1e6e15a965",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[1, 2, 3, [100, 37251289]]"
+      ]
+     },
+     "execution_count": 122,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l1[3][1] = 37251289\n",
+    "l1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 123,
+   "id": "71cdb6a7-3925-41e0-addf-01d8d67cee85",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "#insert "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 124,
+   "id": "d8f42740-c5ef-4c50-80e8-c2eecbbd3b29",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[21, 78, 100, 200, 300, 89, 11, 1000]"
+      ]
+     },
+     "execution_count": 124,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l.insert(1, 78)\n",
+    "l"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 125,
+   "id": "6a0b5e00-6f3a-4a26-a9d2-b570f6a7abe9",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "l.remove(78)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 126,
+   "id": "646a76e4-4bce-4ed7-b7f0-c51afca5328d",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[21, 100, 200, 300, 89, 11, 1000]"
+      ]
+     },
+     "execution_count": 126,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 127,
+   "id": "da72018b-5a9b-4deb-86e4-18fb822149a6",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# pop"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 128,
+   "id": "967372c4-4149-4c9f-8883-2b61041614a1",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "1000"
+      ]
+     },
+     "execution_count": 128,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l.pop()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 129,
+   "id": "89c3b8fb-1afe-450a-9fba-0abdfa10d091",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[21, 100, 200, 300, 89, 11]"
+      ]
+     },
+     "execution_count": 129,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 130,
+   "id": "da1cada1-cb55-4a0b-b6e5-8f465ff0c547",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "300"
+      ]
+     },
+     "execution_count": 130,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l.pop(3)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 142,
+   "id": "674f541d-abbe-4242-a9ac-7e5258e30660",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[21, 100, 89, 11]"
+      ]
+     },
+     "execution_count": 142,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "l"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "65d5a1c8-c3b4-4754-95ef-8476c881415c",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python [conda env:base] *",
+   "language": "python",
+   "name": "conda-base-py"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.13.9"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
